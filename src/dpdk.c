@@ -140,7 +140,7 @@ void dpdk_poll(void)
 		if (rx_pkts[i])
 		{
 			uint64_t bpf_ret = 0;
-			struct xdp_md data;
+			struct xdp_md_userspace data;
 			data.data = rx_pkts[i]->buf_addr;
 			data.data_end = data.data + rx_pkts[i]->data_len;
 			/* FIXME: Start your logic from here */

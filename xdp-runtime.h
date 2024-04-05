@@ -3,10 +3,10 @@
 
 #include <stdint.h>
 
-struct xdp_md {
-	unsigned int data;
-	unsigned int data_end;
-	unsigned int data_meta;
+struct xdp_md_userspace {
+	uint64_t data;
+	uint64_t data_end;
+	uint64_t data_meta;
 	unsigned int ingress_ifindex;
 	unsigned int rx_queue_index;
 	unsigned int egress_ifindex;
