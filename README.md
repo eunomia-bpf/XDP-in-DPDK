@@ -1,5 +1,7 @@
 # XDP in userspace eBPF with DPDK
 
+The repo is moved to https://github.com/userspace-xdp/userspace-xdp
+
 ## XDP examples: libbpf-bootstrap
 
 Use libbpf-bootsrap to load xdp program in userspace.
